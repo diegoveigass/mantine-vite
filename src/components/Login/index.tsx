@@ -3,6 +3,9 @@ import { useForm } from '@mantine/hooks';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
 
+import { MdPassword, MdEmail } from 'react-icons/md';
+import { AiOutlineUser } from 'react-icons/ai';
+
 import styles from './styles.module.scss';
 
 export const Login = () => {
@@ -35,6 +38,7 @@ export const Login = () => {
         })}
       >
         <TextInput
+          icon={<MdEmail />}
           required
           label="Email"
           style={{ width: '100%' }}
@@ -42,6 +46,7 @@ export const Login = () => {
           {...form.getInputProps('email')}
         />
         <TextInput
+          icon={<AiOutlineUser />}
           required
           label="Nome"
           style={{ width: '100%' }}
@@ -49,6 +54,7 @@ export const Login = () => {
           {...form.getInputProps('name')}
         />
         <PasswordInput
+          icon={<MdPassword />}
           required
           label="Password"
           style={{ width: '100%' }}

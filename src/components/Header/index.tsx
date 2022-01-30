@@ -9,7 +9,13 @@ export const MyHeader = () => {
   return (
     <Header height={10} className={styles.header}>
       <h1>Olá, {user?.name}</h1>
-      <Button onClick={handleSignOut}>Sair</Button>
+      <Button
+        variant="gradient"
+        gradient={{ from: 'orange', to: 'red' }}
+        onClick={handleSignOut}
+      >
+        Sair
+      </Button>
     </Header>
   );
 };
