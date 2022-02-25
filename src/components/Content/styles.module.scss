@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  padding: 1.5rem 4rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  align-items: flex-end;
+}
+
+.characterInfo {
+  margin: 0 auto;
+
+  margin-top: 1.5rem;
+  background-color: #a59d9d;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 300px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.premium {
+  text-transform: capitalize;
+}
